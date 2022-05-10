@@ -1,0 +1,9 @@
+---
+- name: Test playbook 2
+  hosts: all
+  tasks:
+    - name: Copy content to file
+      copy:
+        dest: /tmp/resolv.conf
+        content: "nameserver 192.168.56.4\n"
+

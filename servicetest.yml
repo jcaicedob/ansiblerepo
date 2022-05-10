@@ -1,0 +1,9 @@
+---
+- name: Playbook 3
+  hosts: all
+  tasks:
+    - name: Start httpd service
+      service:
+        name: httpd
+        state: started
+    
